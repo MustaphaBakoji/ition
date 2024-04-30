@@ -65,9 +65,9 @@ function Header({ onSearch, onCategory }) {
         </div>
     </div> :
         <div >
-            {!showMenu && <button onClick={() => { setshowMenu((prev) => (!prev)) }} className=' absolute right-4 text-orange-400'><BiMenuAltLeft /></button>}
+            {!showMenu && <button onClick={() => { setshowMenu((prev) => (!prev)) }} className=' absolute right-2 text-orange-400'><BiMenuAltLeft className=' w-8 h-8' /></button>}
             <div className='nav-bar w-full min-h-10 mb-2 flex  text-white justify-between items-center' style={{ display: !showMenu ? 'none' : 'block' }}>
-                <div className="absolute" onClick={() => { setshowMenu((prev) => (!prev)) }}><CgClose /></div>
+                <div className="absolute ml-4" onClick={() => { setshowMenu((prev) => (!prev)) }}><CgClose className=' h-7 w-7' /></div>
                 <div className='flex  flex-col justify-around' >
 
                     <p >All</p>
